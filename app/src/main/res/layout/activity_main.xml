@@ -1,10 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="@drawable/beijing">
 
-</LinearLayout>
+    <DigitalClock
+        android:id="@+id/dClock"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/clock1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"
+        android:text="Alarm 1"
+        android:textColor="#ff3700"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/setalarm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_shape"
+        android:text="Set Alarm"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ring1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setalarm1"
+        android:layout_marginTop="10dp"
+        android:text="No Alarm"
+        android:textColor="@color/colorOrange"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/cancel1"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/setalarm1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_shape"
+        android:text=" Delete "
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/clock2"
+        android:layout_marginTop="160dp"
+        android:text="Alarm 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff3700"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/setalarm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_shape"
+        android:textSize="18sp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp" />
+
+    <TextView
+        android:id="@+id/ring2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_below="@id/setalarm2"
+        android:text="No Alarm"
+        android:textColor="@color/colorOrange"/>
+
+    <Button
+        android:id="@+id/cancel2"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/setalarm2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_shape"
+        android:text=" Delete "
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/clock3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="10dp"
+        android:text="Alarm 3"
+        android:textColor="#ff3700"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/setalarm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="85dp"
+        android:background="@drawable/button_shape"
+        android:text="Set Alarm"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ring3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setalarm3"
+        android:layout_marginTop="10dp"
+        android:text="No Alarm"
+        android:textColor="@color/colorOrange"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/cancel3"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/setalarm3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="85dp"
+        android:background="@drawable/button_shape"
+        android:text=" Delete "
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/clock4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="10dp"
+        android:text="Alarm 4"
+        android:textColor="#ff3700"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/setalarm4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="85dp"
+        android:background="@drawable/button_shape"
+        android:text="Set Alarm"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ring4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setalarm4"
+        android:layout_marginTop="10dp"
+        android:text="No Alarm"
+        android:textColor="@color/colorOrange"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/cancel4"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/setalarm4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="85dp"
+        android:background="@drawable/button_shape"
+        android:text=" Delete "
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
